@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import { Cabin } from "@next/font/google";
+import Navbar from "../components/navbar";
 
 const cabin = Cabin({ subsets: ["latin"] });
 
@@ -8,6 +9,7 @@ function MyApp({ Component, pageProps }) {
         <>
             <main className={cabin.className}>
                 <div className=' wrapper bg-color-main'>
+                    <Navbar />
                     <Component {...pageProps} />
                 </div>
             </main>
